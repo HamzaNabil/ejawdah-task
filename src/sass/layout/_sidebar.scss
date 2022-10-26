@@ -1,0 +1,140 @@
+.sidebar {
+  flex: 1;
+  background-color: $main_color;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100%;
+  transition: 0.3s;
+
+  @include respond(mobile) {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    right: -100%;
+  }
+
+  &.showSide {
+    right: 0;
+  }
+
+  &__header {
+    padding: 15px;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  .navbar__title {
+    font-size: 1rem;
+    border-top: 1px solid $hover_color;
+    padding: 1.2rem 1.2rem 0;
+    color: $hover_color;
+  }
+
+  .list__item {
+    a {
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 0.6rem 1.2rem;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      &.active,
+      &:hover {
+        background-color: $hover_color;
+        font-weight: bold;
+        svg {
+          fill: $white_color;
+          color: $white_color !important;
+        }
+      }
+    }
+    &__txt {
+      // margin-right: .6rem
+      margin-inline-start: 0.6rem;
+    }
+  }
+
+  &__footer {
+    margin: 200px 8px 8px 8px;
+    &__box {
+      padding: 2rem;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+
+      .footer__box {
+        &__title {
+          font-size: 1.1rem;
+        }
+
+        &__txt {
+          font-size: 0.9rem;
+          a {
+            margin: 0 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            text-decoration: none;
+          }
+        }
+
+        &__link {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.8rem;
+          background-color: $hover_color;
+          color: $white_color;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+
+      &:nth-child(2) {
+        .footer__box__link {
+          background-color: $white_color;
+          color: $hover_color;
+        }
+      }
+    }
+  }
+
+  .footer__bottom {
+    &__logo {
+      margin-bottom: 0.2rem;
+    }
+    .line {
+      width: 100px;
+      height: 1px;
+      background-color: $white_color;
+      border: 0;
+      margin: 0.6rem auto;
+      opacity: 1;
+    }
+    p {
+      font-size: 0.7rem;
+      color: $white_color;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// rtl
+
+[dir="ltr"] .sidebar {
+  @include respond(mobile) {
+    right: auto;
+    left: -100%;
+  }
+
+  &.showSide {
+    left: 0;
+  }
+}

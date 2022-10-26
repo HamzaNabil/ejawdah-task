@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "DinArabicRegular";
+  src: url("../../assets/fonts/DINNextLTArabic-Regular.woff");
+}
+
+$dinArabicRegularFont: "DinArabicRegular";
+
+body {
+  font-family: $dinArabicRegularFont;
+}

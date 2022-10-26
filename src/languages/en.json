@@ -1,0 +1,22 @@
+{
+  "header.welcome": "Welcome",
+  "welcom.username": "Ahmed Khaled Al-Qahtani",
+  "item.home": "Home",
+  "item.requests": "Incoming requests",
+  "item.myRequests": "My Requests",
+  "item.addressRecord": "Address Record",
+  "item.negotiation": "Negotiation",
+  "item.trade1": "Reserve a trade name",
+  "item.trade2": "Edit a trade name",
+  "item.trade3": "Cross out a trade name",
+  "item.another1": "Business platform",
+  "item.another2": "Electronic services",
+  "item.another3": "Contact Us",
+
+  "tab1.total": "Total number",
+  "tab2.records": "Sub records",
+  "tab3.numberOfRecords": "Number of enterprise records",
+  "tab4.favRecords": "Favorite records ",
+  "content.title1": "List of commercial records",
+  "content.title2": "Licenses and permits statistics"
+}

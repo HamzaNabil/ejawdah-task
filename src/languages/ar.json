@@ -1,0 +1,21 @@
+{
+  "header.welcome": "مرحبا",
+  "welcom.username": "أحمد خالد الغامدى القحطانى",
+  "item.home": "الرئيسية",
+  "item.requests": "الطلبات الواردة",
+  "item.myRequests": "طلباتى",
+  "item.addressRecord": "سجل العناوين",
+  "item.negotiation": "التفاويض",
+  "item.trade1": " حجز اسم تجارى",
+  "item.trade2": "تعديل اسم تجارى",
+  "item.trade3": "شطب اسم تجارى",
+  "item.another1": " منصة الاعمال",
+  "item.another2": "الخدمات الالكترونيه",
+  "item.another3": "تواصل معنا ",
+  "tab1.total": "العدد الكلى",
+  "tab2.records": "السجلات الفرعيه",
+  "tab3.numberOfRecords": "عدد سجلات المؤسسات",
+  "tab4.favRecords": "السجلات المفضلة ",
+  "content.title1": "قائمة السجلات التجارية",
+  "content.title2": "احصائيات الرخص والتصاريح"
+}

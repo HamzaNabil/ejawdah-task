@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 2px 7px #eee;
+
+  &__logo {
+    max-width: 150px;
+    img {
+      width: 100%;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin: 0;
+    li {
+      &:last-of-type {
+        display: none;
+
+        @include respond(mobile) {
+          display: block;
+          position: relative;
+          z-index: 999;
+        }
+      }
+    }
+    a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      border-radius: 6px;
+      &.active,
+      &:hover {
+        background-color: $main_color;
+        color: $white_color;
+      }
+    }
+  }
+}

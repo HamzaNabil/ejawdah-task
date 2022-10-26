@@ -1,0 +1,36 @@
+.content {
+  flex: 5;
+  padding: 1rem 0;
+  &__header {
+    margin: 1.5rem 0;
+    &__title {
+      color: $purple_color;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+    .tab__item {
+      border: 0;
+      font-size: 0.9rem;
+      background-color: transparent;
+      border: 1px solid $white_color;
+      border-bottom: 4px solid $white_color;
+      padding: 0.4rem;
+      @include respond(mobile) {
+        width: 100%;
+      }
+      &.active,
+      &:hover {
+        font-weight: bold;
+        border: 1px solid #ccc;
+        border-bottom: 4px solid $main_color;
+      }
+    }
+  }
+}

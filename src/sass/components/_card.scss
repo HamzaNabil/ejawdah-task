@@ -1,0 +1,120 @@
+.card {
+  &__items {
+    .card__item {
+      border: 1px solid #e6e6e6;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 15px;
+      &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__title {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      &__actions {
+        display: flex;
+        gap: 7px;
+        button {
+          background-color: #e9effd;
+          color: #2b67ef;
+          border: 0;
+          padding: 0.5rem 0.6rem;
+          text-align: center;
+          &:hover {
+            background-color: $main_color;
+            svg {
+              fill: $white_color;
+              color: $white_color;
+            }
+          }
+        }
+      }
+      &__tags {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        .card__item {
+          &__tag {
+            padding: 0.32rem;
+            font-size: 0.8rem;
+            > span {
+              &:last-of-type {
+                font-weight: bold;
+              }
+            }
+            &.primary_tag {
+              background-color: $primary_color;
+              > span {
+                &:last-of-type {
+                  color: $green_color;
+                }
+              }
+            }
+            &.secondary_tag {
+              background-color: $secondary_color;
+              > span {
+                &:last-of-type {
+                  color: $gray_color;
+                }
+              }
+            }
+            &.warning_tag {
+              background-color: $warning_color;
+              > span {
+                &:last-of-type {
+                  color: $orange_color;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__info {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        @include respond(mobile) {
+          gap: 25px;
+        }
+        .card__info__item {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          img {
+            max-width: 50px;
+          }
+          .info__description {
+            p {
+              color: $gray_color;
+              margin-bottom: 7px;
+              font-weight: bold;
+            }
+            span {
+            }
+          }
+        }
+      }
+      &__bottom {
+        button {
+          background-color: #d5e1fc;
+          color: #326cf0;
+          min-width: 160px;
+          padding: 0.7rem 0;
+          border: 0;
+          font-weight: bold;
+          font-size: 0.8rem;
+          &:hover {
+            background-color: $main_color;
+            color: $white_color;
+          }
+        }
+      }
+    }
+  }
+}
