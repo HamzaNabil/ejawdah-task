@@ -1,13 +1,13 @@
 # Features Added
 
-[x] Reusable Component
-[x] File Structure (Components|Helpers|Utils|Hooks)
-[x] Custom Hooks (useFetch)
-[x] Sass Structure (abstracts|base|component|layout|vendors)
-[x] Redux State Managment (actions|reducers|store)
-[x] React Intl (localLization)
-[x] Full Repsonsive
-[x] Support Arabic & English
+- [x] Reusable Component
+- [x] File Structure (Components|Helpers|Utils|Hooks)
+- [x] Custom Hooks (useFetch)
+- [x] Sass Structure (abstracts|base|component|layout|vendors)
+- [x] Redux State Managment (actions|reducers|store)
+- [x] React Intl (localLization)
+- [x] Full Repsonsive
+- [x] Support Arabic & English
 
 # Project Link
 
