@@ -9,9 +9,9 @@
 - [x] Full Repsonsive
 - [x] Support Arabic & English
 
-# Project Link
+# Project Link [https://task-ejawdah.netlify.app/]
 
-(https://task-ejawdah.netlify.app/)
+# Youtube Video: [https://www.youtube.com/watch?v=eVuUmoHtbTY]
 
 # Getting Started with Create React App
 
